@@ -48,7 +48,8 @@
 </head>
 <body>
     <div class="form-container">
-        <form action="">
+        <form action="{{ route('payment') }}" method="POST">
+            @csrf
             <label for="amount">Amount</label>
             <input type="text" id="amount" name="amount">
             <br> <br>
